@@ -1,0 +1,18 @@
+{
+  "name": "simple",
+  "module": "main.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch main.ts",
+    "server": "bun build --compile --target=bun-linux-x64 ./main.ts --outputfile hono"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "hono": "^4.6.2"
+  }
+}
